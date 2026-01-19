@@ -1,63 +1,141 @@
+# 🤖 Bot Automatizado de Felicitaciones por WhatsApp  
+### 🎉 Alquiladora Crystal
 
+Este proyecto es un **bot automatizado** que envía **felicitaciones de cumpleaños personalizadas por WhatsApp**, incluyendo **mensaje + imagen**, utilizando datos almacenados en un archivo **Excel**.
 
-# Bot Automatizado de Felicitaciones por WhatsApp para Alquiladora Crystal
+El bot fue diseñado para **automatizar procesos repetitivos**, mejorar la **experiencia del cliente** y generar **impacto directo en ventas**, eliminando tareas manuales dentro de la empresa.
 
-Este bot envía felicitaciones de cumpleaños personalizadas por **WhatsApp Web**, incluyendo un mensaje y una imagen adjunta, basado en los datos de un archivo Excel. 
-## Características  
-**El bot incluye las siguientes funcionalidades:**  
+---
 
--  **Lectura de datos** desde un archivo Excel (`datos.xlsx`).  
--  **Normalización de números de teléfono** para evitar errores.  
--  **Comparación automática de fechas de nacimiento** con la fecha actual.  
--  **Envío automatizado de mensajes** con una imagen adjunta a través de **WhatsApp Web**.  
--  **Prevención de mensajes duplicados** para evitar reenviar felicitaciones a la misma persona.  
+## ✨ Overview
 
+El bot revisa diariamente una base de datos de clientes y:
 
-## Requisitos  
-Para ejecutar este bot, necesitas:  
+- Detecta automáticamente quién cumple años
+- Personaliza el mensaje con el nombre del cliente
+- Envía la felicitación vía **WhatsApp Web**
+- Evita envíos duplicados
+- Funciona sin intervención humana diaria
 
-- Python 3.x 
-- Librerías necesarias
-- WhatsApp Web activo en el navegador
+Este proyecto resuelve una **necesidad real de negocio**, no es un script experimental.
 
-## Algunas Notas  
-- El script usa PyAutoGUI para interactuar con WhatsApp Web, por lo que la resolución de pantalla afecta la precisión de los clics.
-- Requiere que WhatsApp Web esté escaneado y activo en el navegador.
+---
 
-## Próximas Mejoras   
- 1.- Optimizar detección de coordenadas para hacerlo más flexible
- 2.- Implementar envío con Twilio o WhatsApp API para mayor estabilidad
- 3.- Agregar logs detallados de envíos exitosos
+## ⚙️ Características Principales
 
+- 📊 **Lectura de datos** desde archivo Excel (`.xlsx`)
+- 📞 **Normalización de números telefónicos**
+- 📅 **Comparación automática de fechas de nacimiento**
+- 💬 **Envío automatizado de mensajes por WhatsApp Web**
+- 🖼️ **Adjunto de imagen promocional**
+- 🚫 **Prevención de mensajes duplicados**
+- ⏱️ **Ejecución programada**
 
-#  Bot Automatizado de Felicitaciones por WhatsApp  
+---
 
-Este bot envía felicitaciones de cumpleaños personalizadas por **WhatsApp Web**, incluyendo un mensaje y una imagen adjunta, basado en los datos de un archivo Excel. 🚀  
+## 🧰 Tech Stack
 
-## Ventajas del Bot para la Empresa  
+<p>
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Python-Light.svg" width="40"/>
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Excel-Light.svg" width="40"/>
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Windows-Light.svg" width="40"/>
+</p>
 
-### Ahorro de Tiempo ⏳  
-✅ **Elimina el trabajo manual**: Antes, un empleado tenía que revisar la base de datos, redactar mensajes y enviarlos manualmente. Ahora, el bot hace esto automáticamente.  
-✅ **Velocidad**: Un mensaje que tomaría **2-3 minutos** en enviarse manualmente ahora se envía en segundos. Si hay **100 clientes** con cumpleaños al mes, el bot puede ahorrar **hasta 5 horas mensuales**.  
-✅ **Programación automática**: El bot ejecuta el proceso diariamente sin intervención humana.  
+### Tecnologías utilizadas
+- **Python 3**
+- **PyAutoGUI** (automatización de interfaz)
+- **Pandas / OpenPyXL** (manejo de Excel)
+- **WhatsApp Web**
 
-### Ahorro de Dinero 💰  
-✅ **Menos carga laboral**: Un empleado que antes dedicaba tiempo a esta tarea puede enfocarse en actividades más estratégicas. Si un trabajador gana **$10 USD/hora** y el bot ahorra **5 horas al mes**, se ahorran al menos **$50 USD mensuales** en costos laborales.  
-✅ **Sin necesidad de software costoso**: Herramientas comerciales de automatización pueden costar entre **$20 y $100 USD al mes**. Este bot es una solución **gratuita y personalizada**.  
-✅ **Más ventas**: Al asegurarse de que todos los clientes reciban su promoción de cumpleaños, la empresa incrementa su tasa de conversión.  
+---
 
-### Mejora de la Experiencia del Cliente 🏆  
-✅ **Personalización automática**: Cada mensaje incluye el **nombre del cliente**, generando una mayor conexión emocional.  
-✅ **Interacción sin esfuerzo**: El cliente recibe un **descuento especial**, incentivando la recompra sin hacer seguimiento manual.  
-✅ **Estrategia de marketing efectiva**: Una felicitación con un **descuento exclusivo** puede generar más ventas que una campaña de email o redes sociales.  
+## 📋 Requisitos
 
-## Resumen del Impacto  
+Para ejecutar el bot necesitas:
 
-| **Beneficio** | **Impacto** |
-|--------------|------------|
-| ⏳ **Tiempo Ahorrado** | Hasta **5 horas mensuales** en tareas manuales |
-| 💰 **Ahorro de Costos** | Evita pagar software de automatización ($20-$100 USD/mes) y reduce costos laborales ($50 USD/mes aprox.) |
-| 📈 **Aumento de Ingresos** | Mayor tasa de conversión gracias a los descuentos personalizados |
-| 🏆 **Mejora la Experiencia del Cliente** | Felicitaciones automáticas con un toque personal |
+- Python 3.x
+- Librerías de Python requeridas
+- Navegador con **WhatsApp Web activo**
+- Sesión de WhatsApp previamente escaneada
+- Resolución de pantalla estable (para PyAutoGUI)
 
+---
 
+## ⚠️ Consideraciones Técnicas
+
+- El bot utiliza **PyAutoGUI**, por lo que:
+  - La resolución de pantalla afecta la precisión de los clics
+  - WhatsApp Web debe estar visible y activo
+- No utiliza APIs externas (por ahora), lo que lo hace:
+  - Gratuito
+  - Flexible
+  - Dependiente del entorno local
+
+---
+
+## 💼 Impacto Real en el Negocio
+
+### ⏳ Ahorro de Tiempo
+- Elimina el envío manual de mensajes
+- Automatiza un proceso que tomaba **2–3 minutos por cliente**
+- Con ~100 clientes/mes → **hasta 5 horas mensuales ahorradas**
+
+### 💰 Ahorro de Costos
+- Evita contratar software de automatización:
+  - Costos comunes: **$20 – $100 USD/mes**
+- Reduce carga operativa del personal
+- Permite enfocar recursos en tareas estratégicas
+
+### 🏆 Mejora de la Experiencia del Cliente
+- Mensajes personalizados con nombre
+- Felicitaciones oportunas y consistentes
+- Incentivo a la recompra mediante promociones
+- Mayor conexión emocional con la marca
+
+---
+
+## 📊 Resumen del Impacto
+
+| Beneficio | Impacto |
+|---------|--------|
+| ⏳ Tiempo | Hasta **5 horas/mes** ahorradas |
+| 💰 Costos | Evita software externo y reduce costos laborales |
+| 📈 Ventas | Mayor conversión por promociones personalizadas |
+| 🏆 Experiencia | Comunicación directa y personalizada |
+
+---
+
+## 🚀 Posibles Mejoras Futuras
+
+1. 📍 Optimizar detección de coordenadas para mayor flexibilidad
+2. ☁️ Migrar a **Twilio / WhatsApp Business API**
+3. 📝 Implementar sistema de logs detallados
+4. 🕒 Integrar ejecución automática con scheduler (Task Scheduler / cron)
+5. 📊 Guardar historial de envíos en base de datos
+
+---
+
+## 🧠 Qué Demuestra Este Proyecto
+
+Este proyecto demuestra mi capacidad para:
+
+- Automatizar procesos empresariales reales
+- Diseñar soluciones prácticas con Python
+- Integrar datos, lógica y UI automation
+- Pensar en **impacto operativo y económico**
+- Proponer mejoras escalables a futuro
+
+---
+
+## 👨‍💻 Autor
+
+**Mauricio Castro**  
+Software Engineering Student | Software Developer  
+
+- GitHub: https://github.com/Mauricio-Castro-Code  
+- LinkedIn: https://www.linkedin.com/in/mauricio-castro-valencia-125985200/  
+- Email: castrovalencia844@gmail.com  
+
+---
+
+⭐ *Este proyecto fue creado para resolver una necesidad real de negocio mediante automatización inteligente.*
