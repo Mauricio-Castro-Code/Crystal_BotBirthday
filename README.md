@@ -1,35 +1,36 @@
-# 🤖 Bot Automatizado de Felicitaciones por WhatsApp  
+# 🤖 Automated WhatsApp Birthday Greetings Bot  
 ### 🎉 Alquiladora Crystal
 
-Este proyecto es un **bot automatizado** que envía **felicitaciones de cumpleaños personalizadas por WhatsApp**, incluyendo **mensaje + imagen**, utilizando datos almacenados en un archivo **Excel**.
+This project is an **automation bot** that sends **personalized birthday greetings via WhatsApp Web**, including a **custom message and image attachment**, using customer data stored in an **Excel file**.
 
-El bot fue diseñado para **automatizar procesos repetitivos**, mejorar la **experiencia del cliente** y generar **impacto directo en ventas**, eliminando tareas manuales dentro de la empresa.
+The bot was designed to **eliminate repetitive manual tasks**, significantly **reduce operational time**, improve **customer experience**, and generate **direct business impact** through consistent and timely communication.
 
 ---
 
 ## ✨ Overview
 
-El bot revisa diariamente una base de datos de clientes y:
+The bot runs daily and automatically:
 
-- Detecta automáticamente quién cumple años
-- Personaliza el mensaje con el nombre del cliente
-- Envía la felicitación vía **WhatsApp Web**
-- Evita envíos duplicados
-- Funciona sin intervención humana diaria
+- Detects customers whose birthday is today
+- Personalizes the message with the customer’s name
+- Sends the greeting via **WhatsApp Web**
+- Attaches a promotional image
+- Prevents duplicate messages
+- Operates without daily human intervention
 
-Este proyecto resuelve una **necesidad real de negocio**, no es un script experimental.
+This project addresses a **real business need** and is actively used in a production-like environment.
 
 ---
 
-## ⚙️ Características Principales
+## ⚙️ Key Features
 
-- 📊 **Lectura de datos** desde archivo Excel (`.xlsx`)
-- 📞 **Normalización de números telefónicos**
-- 📅 **Comparación automática de fechas de nacimiento**
-- 💬 **Envío automatizado de mensajes por WhatsApp Web**
-- 🖼️ **Adjunto de imagen promocional**
-- 🚫 **Prevención de mensajes duplicados**
-- ⏱️ **Ejecución programada**
+- 📊 **Excel data processing** (`.xlsx`)
+- 📞 **Phone number normalization**
+- 📅 **Automatic birthday date matching**
+- 💬 **Automated WhatsApp Web messaging**
+- 🖼️ **Image attachment support**
+- 🚫 **Duplicate message prevention**
+- ⏱️ **Scheduled execution**
 
 ---
 
@@ -41,93 +42,100 @@ Este proyecto resuelve una **necesidad real de negocio**, no es un script experi
   <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Windows-Light.svg" width="40"/>
 </p>
 
-### Tecnologías utilizadas
+### Technologies Used
 - **Python 3**
-- **PyAutoGUI** (automatización de interfaz)
-- **Pandas / OpenPyXL** (manejo de Excel)
+- **Pandas**
+- **OpenPyXL**
+- **PyAutoGUI** (UI automation)
 - **WhatsApp Web**
+- **Excel (.xlsx)**
+- **Git & GitHub**
 
 ---
 
-## 📋 Requisitos
+## 📋 Requirements
 
-Para ejecutar el bot necesitas:
+To run this bot, you need:
 
 - Python 3.x
-- Librerías de Python requeridas
-- Navegador con **WhatsApp Web activo**
-- Sesión de WhatsApp previamente escaneada
-- Resolución de pantalla estable (para PyAutoGUI)
+- Required Python libraries
+- A browser with **WhatsApp Web active**
+- A previously scanned WhatsApp session
+- Stable screen resolution (required by PyAutoGUI)
 
 ---
 
-## ⚠️ Consideraciones Técnicas
+## ⚠️ Technical Considerations
 
-- El bot utiliza **PyAutoGUI**, por lo que:
-  - La resolución de pantalla afecta la precisión de los clics
-  - WhatsApp Web debe estar visible y activo
-- No utiliza APIs externas (por ahora), lo que lo hace:
-  - Gratuito
-  - Flexible
-  - Dependiente del entorno local
-
----
-
-## 💼 Impacto Real en el Negocio
-
-### ⏳ Ahorro de Tiempo
-- Elimina el envío manual de mensajes
-- Automatiza un proceso que tomaba **2–3 minutos por cliente**
-- Con ~100 clientes/mes → **hasta 5 horas mensuales ahorradas**
-
-### 💰 Ahorro de Costos
-- Evita contratar software de automatización:
-  - Costos comunes: **$20 – $100 USD/mes**
-- Reduce carga operativa del personal
-- Permite enfocar recursos en tareas estratégicas
-
-### 🏆 Mejora de la Experiencia del Cliente
-- Mensajes personalizados con nombre
-- Felicitaciones oportunas y consistentes
-- Incentivo a la recompra mediante promociones
-- Mayor conexión emocional con la marca
+- The bot relies on **PyAutoGUI**, therefore:
+  - Screen resolution affects click accuracy
+  - WhatsApp Web must remain visible and active
+- No external APIs are used at this stage, making the solution:
+  - Free to operate
+  - Highly customizable
+  - Dependent on the local execution environment
 
 ---
 
-## 📊 Resumen del Impacto
+## 💼 Real Business Impact
 
-| Beneficio | Impacto |
-|---------|--------|
-| ⏳ Tiempo | Hasta **5 horas/mes** ahorradas |
-| 💰 Costos | Evita software externo y reduce costos laborales |
-| 📈 Ventas | Mayor conversión por promociones personalizadas |
-| 🏆 Experiencia | Comunicación directa y personalizada |
+### ⏳ Time Savings (Key Benefit)
 
----
+- Completely removes manual message sending
+- Automates a process that previously took **2–3 minutes per customer**
+- With ~100 customers per month → **up to 5 hours saved monthly**
+- Ensures **100% consistency** in customer outreach
 
-## 🚀 Posibles Mejoras Futuras
+### 💰 Cost Reduction
 
-1. 📍 Optimizar detección de coordenadas para mayor flexibilidad
-2. ☁️ Migrar a **Twilio / WhatsApp Business API**
-3. 📝 Implementar sistema de logs detallados
-4. 🕒 Integrar ejecución automática con scheduler (Task Scheduler / cron)
-5. 📊 Guardar historial de envíos en base de datos
+- Avoids third-party automation tools:
+  - Typical costs: **$20–$100 USD/month**
+- Reduces operational workload
+- Allows staff to focus on higher-value tasks
 
----
+### 🏆 Improved Customer Experience
 
-## 🧠 Qué Demuestra Este Proyecto
-
-Este proyecto demuestra mi capacidad para:
-
-- Automatizar procesos empresariales reales
-- Diseñar soluciones prácticas con Python
-- Integrar datos, lógica y UI automation
-- Pensar en **impacto operativo y económico**
-- Proponer mejoras escalables a futuro
+- Personalized messages using customer names
+- Timely and consistent birthday greetings
+- Increased emotional connection with the brand
+- Higher probability of repeat business through promotions
 
 ---
 
-## 👨‍💻 Autor
+## 📊 Impact Summary
+
+| Benefit | Impact |
+|-------|--------|
+| ⏳ Time Saved | Up to **5 hours/month** |
+| 💰 Cost Savings | Eliminates paid automation tools and reduces labor costs |
+| 📈 Revenue | Increased conversion through personalized promotions |
+| 🏆 Experience | Direct, consistent, and personalized communication |
+
+---
+
+## 🚀 Future Improvements
+
+1. 📍 Improve coordinate detection for better flexibility
+2. ☁️ Migrate to **Twilio / WhatsApp Business API**
+3. 📝 Implement detailed delivery logs
+4. 🕒 Add automated scheduling (Task Scheduler / cron)
+5. 📊 Store message history in a database
+
+---
+
+## 🧠 What This Project Demonstrates
+
+This project demonstrates my ability to:
+
+- Automate real-world business processes
+- Design practical Python-based solutions
+- Integrate data processing with UI automation
+- Optimize workflows for **time and cost efficiency**
+- Think in terms of scalability and future improvements
+
+---
+
+## 👨‍💻 Author
 
 **Mauricio Castro**  
 Software Engineering Student | Software Developer  
@@ -138,4 +146,4 @@ Software Engineering Student | Software Developer
 
 ---
 
-⭐ *Este proyecto fue creado para resolver una necesidad real de negocio mediante automatización inteligente.*
+⭐ *This project was built to solve a real business problem through intelligent automation.*
